@@ -5,6 +5,8 @@
 ## User files
 .DS_Store
 /.vscode
+/sourcecode
+
 
 ## User settings
 xcuserdata/
