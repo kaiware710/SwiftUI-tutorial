@@ -1,13 +1,15 @@
-var occupation = [
-    "ユウスケ": "エンジニア",
-    "リョウタ": "営業",
-    "カズキ": "臨床心理士"
-]
-print(occupation["ユウスケ"])
-print(occupation["ユウスケ"]!)
+var occupation = ["エンジニア", "営業", "臨床心理士"]
 
-occupation["ウエキ"] = "数学教師"
-print(occupation)
+for oc in occupation {
+    print(oc)
+}
 
-var emptyDict = [String: Int]()
-print(emptyDict)
+// 閉区間   範囲演算子  1~10
+for i in 1...10 {
+    print(i)
+}
+
+// 半開区間  1~9
+for i in 1..<10 {
+    print(i)
+}
