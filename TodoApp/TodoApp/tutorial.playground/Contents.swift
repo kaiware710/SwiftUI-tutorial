@@ -1,15 +1,10 @@
-var occupation = ["エンジニア", "営業", "臨床心理士"]
-
-for oc in occupation {
-    print(oc)
+func HowAreYou(name: String) -> String {
+    return "こんにちは\(name)さん。調子はどう？"
 }
+print(HowAreYou(name: "デニス"))
 
-// 閉区間   範囲演算子  1~10
-for i in 1...10 {
-    print(i)
+func greeting(greet: String, name: String, word: String) -> String {
+    return "\(greet)、\(name)さん。\(word)"
 }
+print(greeting(greet: "おはよう", name: "デニス", word: "今日も元気？"))
 
-// 半開区間  1~9
-for i in 1..<10 {
-    print(i)
-}
