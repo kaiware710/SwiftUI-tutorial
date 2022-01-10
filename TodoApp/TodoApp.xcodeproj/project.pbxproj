@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB6B77922789343700808BF5 /* TodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6B77912789343700808BF5 /* TodoAppApp.swift */; };
 		BB6B77942789343700808BF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6B77932789343700808BF5 /* ContentView.swift */; };
 		BB6B77962789343900808BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6B77952789343900808BF5 /* Assets.xcassets */; };
 		BB6B77992789343900808BF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6B77982789343900808BF5 /* Preview Assets.xcassets */; };
+		BB8EC9AD278C11D200259738 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EC9AC278C11D200259738 /* TodoApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB6B778E2789343700808BF5 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB6B77912789343700808BF5 /* TodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppApp.swift; sourceTree = "<group>"; };
 		BB6B77932789343700808BF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB6B77952789343900808BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6B77982789343900808BF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB6B779F27893ADE00808BF5 /* tutorial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = tutorial.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BB8EC9AC278C11D200259738 /* TodoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +52,8 @@
 		BB6B77902789343700808BF5 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
-				BB6B77912789343700808BF5 /* TodoAppApp.swift */,
 				BB6B77932789343700808BF5 /* ContentView.swift */,
+				BB8EC9AC278C11D200259738 /* TodoApp.swift */,
 				BB6B77952789343900808BF5 /* Assets.xcassets */,
 				BB6B77972789343900808BF5 /* Preview Content */,
 				BB6B779F27893ADE00808BF5 /* tutorial.playground */,
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6B77942789343700808BF5 /* ContentView.swift in Sources */,
-				BB6B77922789343700808BF5 /* TodoAppApp.swift in Sources */,
+				BB8EC9AD278C11D200259738 /* TodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
