@@ -1,8 +1,13 @@
-var sports = ["サッカー", "バスケットボール", "野球"]
-print(sports[1])
-sports.append("ダンス")
-print(sports)
+var occupation = [
+    "ユウスケ": "エンジニア",
+    "リョウタ": "営業",
+    "カズキ": "臨床心理士"
+]
+print(occupation["ユウスケ"])
+print(occupation["ユウスケ"]!)
 
-var emptyArray = [String]()
-print(emptyArray)
+occupation["ウエキ"] = "数学教師"
+print(occupation)
 
+var emptyDict = [String: Int]()
+print(emptyDict)
