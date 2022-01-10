@@ -1,10 +1,12 @@
-func HowAreYou(name: String) -> String {
-    return "こんにちは\(name)さん。調子はどう？"
+let Hello = { (name: String) -> String in
+    return "こんにちは\(name)さん！"
 }
-print(HowAreYou(name: "デニス"))
-
-func greeting(greet: String, name: String, word: String) -> String {
-    return "\(greet)、\(name)さん。\(word)"
+print(Hello("デイビッド"))
+// 引数の省略
+let Hello = { () -> String in
+    return "こんにちはデイビッドさん！"
 }
-print(greeting(greet: "おはよう", name: "デニス", word: "今日も元気？"))
-
+print(Hello())
+// 戻り地の省略
+let Hello = {print("こんにちはデイビッドさん！")}
+Hello()
