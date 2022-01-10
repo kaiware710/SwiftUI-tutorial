@@ -1,12 +1,26 @@
-let Hello = { (name: String) -> String in
-    return "こんにちは\(name)さん！"
+class Animal {
+    var age = 2
+    let kind = "犬"
+
+    func Bite() {
+        print("\(age)歳の\(kind)が噛み付いてきた。")
+    }
 }
-print(Hello("デイビッド"))
-// 引数の省略
-let Hello = { () -> String in
-    return "こんにちはデイビッドさん！"
+var dog = Animal()
+print(String(dog.age)+"歳")
+dog.Bite()
+
+
+class AnimalInit {
+    var age: Int
+    var kind: String
+    func Bite() {
+        print("\(age)歳の\(kind)が噛み付いてきた。")
+    }
+    init(age: Int, kind: String) {
+        self.age = age
+        self.kind = kind
+    }
 }
-print(Hello())
-// 戻り地の省略
-let Hello = {print("こんにちはデイビッドさん！")}
-Hello()
+var cat = AnimalInit(age: 4, kind: "猫")
+cat.Bite()
