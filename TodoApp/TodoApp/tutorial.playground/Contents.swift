@@ -1,23 +1,28 @@
-import UIKit
-
-var canConnectServer = false
-
-func connectServer() throws {
-    if canConnectServer {
-        print("サーバーと接続")
-    }
-    else {
-        throw NSError()
+class Monster {
+    var kind = "モンスター"
+    func bodyBrow() {
+        print("体当たり")
     }
 }
 
-func getData() {
-    do {
-        try connectServer()
-        print("データを取り出す")
-    } catch {
-        print("エラーの時の処理")
+class Dragon: Monster {
+    func fireBreath() {
+        print("火を吹く")
     }
 }
 
-getData()
+class Slime: Monster {
+    func recovery() {
+        print("回復する")
+    }
+}
+
+var dragon = Dragon()
+print(dragon.kind)
+dragon.bodyBrow()
+dragon.fireBreath()
+
+var slime = Slime()
+print(slime.kind)
+slime.bodyBrow()
+slime.recovery()
