@@ -1,11 +1,23 @@
-protocol Animal {
-    var age: Int { get }  // プロパティ
-    func bark()   // メソッド
-}
+import UIKit
 
-struct Dog: Animal {
-    let age: Int
-    func bark() {
-        print("犬が吠える")
+var canConnectServer = false
+
+func connectServer() throws {
+    if canConnectServer {
+        print("サーバーと接続")
+    }
+    else {
+        throw NSError()
     }
 }
+
+func getData() {
+    do {
+        try connectServer()
+        print("データを取り出す")
+    } catch {
+        print("エラーの時の処理")
+    }
+}
+
+getData()
