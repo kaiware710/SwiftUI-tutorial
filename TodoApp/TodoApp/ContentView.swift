@@ -6,22 +6,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView{
-            List {
-                Text("おはよう")
-                    .foregroundColor(Color.red)
-                    .padding()
-                Text("こんにちは")
-                    .foregroundColor(Color.blue)
-                    .padding()
-                Text("こんばんは")
-                    .foregroundColor(Color.gray)
-                    .padding()
-            }
-                .navigationBarTitle(Text("挨拶"))
-                .navigationBarItems(trailing:
-                    Text("言葉")
-                )
+//        NavigationView{
+//            List {
+//                Text("おはよう")
+//                    .foregroundColor(Color.red)
+//                    .padding()
+//                Text("こんにちは")
+//                    .foregroundColor(Color.blue)
+//                    .padding()
+//                Text("こんばんは")
+//                    .foregroundColor(Color.gray)
+//                    .padding()
+//            }
+//                .navigationBarTitle(Text("挨拶"))
+//                .navigationBarItems(trailing:
+//                    Text("言葉")
+//                )
+//        }
+        HStack {
+            Text("Japanese Greetings")
+            Text("日本語の挨拶")
         }
     }
 }
