@@ -6,9 +6,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("はろはろ")
-            .foregroundColor(Color.red)
-            .padding()
+        
+        List {
+            Text("おはよう")
+                .foregroundColor(Color.red)
+                .padding()
+            Text("こんにちは")
+                .foregroundColor(Color.blue)
+                .padding()
+            Text("こんばんは")
+                .foregroundColor(Color.gray)
+                .padding()
+        }
     }
 }
 
