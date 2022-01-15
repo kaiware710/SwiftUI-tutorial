@@ -23,9 +23,14 @@ struct ContentView: View {
 //                    Text("言葉")
 //                )
 //        }
-        HStack {
-            Text("Japanese Greetings")
-            Text("日本語の挨拶")
+//        HStack {
+//            Text("Japanese Greetings")
+//            Text("日本語の挨拶")
+//        }
+        VStack {
+            Text("Good Morning")
+                .padding()
+            Text("Hello")
         }
     }
 }
