@@ -6,6 +6,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        List {
+            ForEach(0..<11) { num in
+                Text("\(num): こんにちは！")
+            }
+        }
+        
 //        NavigationView{
 //            List {
 //                Text("おはよう")
@@ -35,20 +41,41 @@ struct ContentView: View {
 //                .padding()
 //            Text("Hello")
 //        }
-        Button(action: {print("ボタン押下")}) {
-            Text("クリック！")
-        }
+//        Button(action: {print("ボタン押下")}) {
+//            Text("クリック！")
+//        }
     }
 }
 
-func Report() {
-    print("ボタン押下")
+//func Report() {
+//    print("ボタン押下")
+//}
+
+struct Human: Identifiable {
+    let id = UUID()
+    let name: String
+}
+
+struct ArrayContentView: View {
+    let humans = [
+        Human(name: "田中"),
+        Human(name: "堀内"),
+        Human(name: "尾山")
+    ]
+    var body: some View {
+        List {
+            ForEach(humans) { human in
+                Text("\(human.name)さん、こんにちは！")
+                Text(human.id.description)
+            }
+        }
+    }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ArrayContentView()
     }
 }
 
