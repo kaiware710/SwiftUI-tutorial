@@ -1,28 +1,13 @@
-class Monster {
-    var kind = "モンスター"
-    func bodyBrow() {
-        print("体当たり")
-    }
-}
+var any: Any = 1024
+var str: String = "文字列"
+var int:Int = 64
 
-class Dragon: Monster {
-    func fireBreath() {
-        print("火を吹く")
-    }
-}
+//var anyStr = str as Any
+//anyStr = any
+//print(anyStr)
 
-class Slime: Monster {
-    func recovery() {
-        print("回復する")
-    }
-}
+//print(any as! Int)
+//print(any as! String)
 
-var dragon = Dragon()
-print(dragon.kind)
-dragon.bodyBrow()
-dragon.fireBreath()
-
-var slime = Slime()
-print(slime.kind)
-slime.bodyBrow()
-slime.recovery()
+print(any as? Int)
+print(any as? String)
