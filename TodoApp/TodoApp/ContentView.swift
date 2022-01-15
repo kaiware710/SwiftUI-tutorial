@@ -19,6 +19,9 @@ struct ContentView: View {
                     .padding()
             }
                 .navigationBarTitle(Text("挨拶"))
+                .navigationBarItems(trailing:
+                    Text("言葉")
+                )
         }
     }
 }
