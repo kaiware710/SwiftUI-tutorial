@@ -6,17 +6,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        List {
-            Text("おはよう")
-                .foregroundColor(Color.red)
-                .padding()
-            Text("こんにちは")
-                .foregroundColor(Color.blue)
-                .padding()
-            Text("こんばんは")
-                .foregroundColor(Color.gray)
-                .padding()
+        NavigationView{
+            List {
+                Text("おはよう")
+                    .foregroundColor(Color.red)
+                    .padding()
+                Text("こんにちは")
+                    .foregroundColor(Color.blue)
+                    .padding()
+                Text("こんばんは")
+                    .foregroundColor(Color.gray)
+                    .padding()
+            }
+                .navigationBarTitle(Text("挨拶"))
         }
     }
 }
