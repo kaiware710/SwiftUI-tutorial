@@ -5,12 +5,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var lastName = "田中"
+    let firstName = "優生"
+        
     var body: some View {
-        List {
-            ForEach(0..<11) { num in
-                Text("\(num): こんにちは！")
+        VStack {
+            Button(action: {self.lastName = "堀内"}) {
+                Text("名字変更")
             }
+            Text(lastName + firstName)
         }
+    }
         
 //        NavigationView{
 //            List {
@@ -44,7 +49,7 @@ struct ContentView: View {
 //        Button(action: {print("ボタン押下")}) {
 //            Text("クリック！")
 //        }
-    }
+
 }
 
 //func Report() {
@@ -75,7 +80,7 @@ struct ArrayContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ArrayContentView()
+        ContentView()
     }
 }
 
