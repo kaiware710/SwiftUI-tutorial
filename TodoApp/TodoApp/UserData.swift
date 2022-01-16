@@ -1,9 +1,6 @@
-//
 //  UserData.swift
 //  TodoApp
-//
 //  Created by 國分悠輔 on 2022/01/17.
-//
 
 import SwiftUI
 

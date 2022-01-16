@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var userData = UserData()
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
         NavigationView {
@@ -52,6 +52,7 @@ struct ContentView: View {
 struct ContentView_Preview: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(UserData())
     }
 }
 
