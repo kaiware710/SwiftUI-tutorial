@@ -5,13 +5,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    var userData = UserData()
+    @ObservedObject var userData = UserData()
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(userData.tasks) { task in
-                    ListRow(task: task.title, isCheck: task.check)
+                    Button(action: {
+                        guard let index = self.userData.tasks.firstIndex(of: task) else { return }
+                        
+                        self.userData.tasks[index].check.toggle()
+                    })
+                    {
+                        ListRow(task: task.title, isCheck: task.check)
+                    }
                 }
                 Text("+")
                     .font(.title)

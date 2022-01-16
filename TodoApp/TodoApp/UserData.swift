@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct UserData {
-    var tasks = [
+class UserData: ObservableObject {
+    @Published var tasks = [
         Task(title: "修論", check: false),
         Task(title: "Swiftアプリ", check: true),
         Task(title: "ダンス", check: true)
