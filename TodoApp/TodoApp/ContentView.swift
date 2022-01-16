@@ -20,8 +20,18 @@ struct ContentView: View {
                         ListRow(task: task.title, isCheck: task.check)
                     }
                 }
-                Text("+")
-                    .font(.title)
+                
+                if self.userData.isEditing {
+                    Draft()
+                } else {
+                    Button(action: {
+                        self.userData.isEditing = true
+                    })
+                    {
+                        Text("+")
+                            .font(.title)
+                    }
+                }
             }
             .navigationBarTitle(Text("Todoアプリ"))
             .navigationBarItems(trailing: Button(action: {
