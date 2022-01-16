@@ -24,8 +24,18 @@ struct ContentView: View {
                     .font(.title)
             }
             .navigationBarTitle(Text("Todoアプリ"))
-            .navigationBarItems(trailing: Text("Delete"))
+            .navigationBarItems(trailing: Button(action: {
+                DeleteTask()
+            })
+            {
+                Text("未完了タスクを表示")
+            })
         }
+    }
+    
+    func DeleteTask() {
+        let necessaryTask = self.userData.tasks.filter({!$0.check})
+        self.userData.tasks = necessaryTask
     }
 }
 
