@@ -4,13 +4,26 @@
 
 import SwiftUI
 
+struct Task: Identifiable {
+    let id = UUID()
+    var title: String
+    var check: Bool
+    
+    init(title: String, check: Bool) {
+        self.title = title
+        self.check = check
+    }
+}
+
 struct ContentView: View {
+    var userData = UserData()  // 構造体のインスタンス作成
+    
     var body: some View {
         NavigationView {
             List {
-                ListRow(task: "修論", isCheck: false)
-                ListRow(task: "Swift画像分類アプリ作成", isCheck: true)
-                ListRow(task: "ダンス", isCheck: true)
+                ForEach(userData.tasks) { task in
+                    ListRow(task: task.title, isCheck: task.check)
+                }
                 Text("+")
                     .font(.title)
             }
