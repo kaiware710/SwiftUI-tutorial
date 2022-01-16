@@ -8,11 +8,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                HStack {
-                    Text("□")
-                    Text("修論")
-                }
-                Text("Swift 学習")
+                ListRow(task: "修論")
+                ListRow(task: "Swift画像分類アプリ作成")
                 Text("+")
                     .font(.title)
             }
