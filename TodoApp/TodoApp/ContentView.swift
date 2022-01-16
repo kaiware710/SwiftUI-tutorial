@@ -4,19 +4,8 @@
 
 import SwiftUI
 
-struct Task: Identifiable {
-    let id = UUID()
-    var title: String
-    var check: Bool
-    
-    init(title: String, check: Bool) {
-        self.title = title
-        self.check = check
-    }
-}
-
 struct ContentView: View {
-    var userData = UserData()  // 構造体のインスタンス作成
+    var userData = UserData()
     
     var body: some View {
         NavigationView {

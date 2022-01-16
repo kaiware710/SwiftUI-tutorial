@@ -10,6 +10,7 @@
 		BB49816C27946B6F00CD31DA /* ContentViewLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49816B27946B6F00CD31DA /* ContentViewLearn.swift */; };
 		BB49816E27946DA500CD31DA /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49816D27946DA500CD31DA /* ListRow.swift */; };
 		BB4981702794778300CD31DA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49816F2794778300CD31DA /* UserData.swift */; };
+		BB49817227947C8B00CD31DA /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49817127947C8B00CD31DA /* UserTask.swift */; };
 		BB6B77942789343700808BF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6B77932789343700808BF5 /* ContentView.swift */; };
 		BB6B77962789343900808BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6B77952789343900808BF5 /* Assets.xcassets */; };
 		BB6B77992789343900808BF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6B77982789343900808BF5 /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		BB49816B27946B6F00CD31DA /* ContentViewLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewLearn.swift; sourceTree = "<group>"; };
 		BB49816D27946DA500CD31DA /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		BB49816F2794778300CD31DA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BB49817127947C8B00CD31DA /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
 		BB6B778E2789343700808BF5 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6B77932789343700808BF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB6B77952789343900808BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				BB6B77932789343700808BF5 /* ContentView.swift */,
+				BB49817127947C8B00CD31DA /* UserTask.swift */,
 				BB49816F2794778300CD31DA /* UserData.swift */,
 				BB49816D27946DA500CD31DA /* ListRow.swift */,
 				BB8EC9AC278C11D200259738 /* TodoAppApp.swift */,
@@ -151,6 +154,7 @@
 				BB49816E27946DA500CD31DA /* ListRow.swift in Sources */,
 				BB49816C27946B6F00CD31DA /* ContentViewLearn.swift in Sources */,
 				BB6B77942789343700808BF5 /* ContentView.swift in Sources */,
+				BB49817227947C8B00CD31DA /* UserTask.swift in Sources */,
 				BB4981702794778300CD31DA /* UserData.swift in Sources */,
 				BB8EC9AD278C11D200259738 /* TodoAppApp.swift in Sources */,
 			);
