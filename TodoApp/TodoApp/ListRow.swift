@@ -12,16 +12,19 @@ struct ListRow: View {
         HStack {
             if isCheck {
                 Text("☑")
+                Text(task)
+                    .strikethrough()
+                    .fontWeight(.ultraLight)
             } else {
                 Text("□")
+                Text(task)
             }
-            Text(task)
         }
     }
 }
 
 struct ListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ListRow(task: "修論", isCheck: true)
+        ListRow(task: "修論", isCheck: false)
     }
 }
